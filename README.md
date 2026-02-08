@@ -7,6 +7,9 @@ The core idea is to trade computational accuracy for significant improvements in
 
 Approximate computing is leveraged because many modern applications do not require fully exact arithmetic results. By dynamically controlling the accuracy level, the proposed multiplier adapts to varying performance and power requirements.
 
+---
+
+
 **Key Concepts Used**
 
 Approximate Computing
@@ -16,6 +19,9 @@ Partial Product Compression
 Accuracy Trade-off Mechanisms
 
 Low-Power VLSI Design
+
+---
+
 
 
 **Architecture Description**
@@ -30,20 +36,13 @@ Partial Product Reduction using ATC (Approximate Tree Compressor)
 
 Uses Incomplete Adder Cells (iCACs) instead of conventional full adders.
 
-Produces an approximate sum vector P and recovery vectors Q.
-
-Reduces hardware complexity and power consumption.
-
 Accuracy Control using CMA (Carry-Maskable Adder)
-
-Combines the approximate sum P with a compensation vector V.
-
-Carry propagation can be selectively masked.
 
 Accuracy is dynamically configurable by controlling the mask width.
 
 Most Significant Bits (MSBs) are computed accurately to preserve output quality.
 
+---
 
  **Tools & Technologies**
 
@@ -55,6 +54,7 @@ Target Platform: FPGA
 
 Design Levels: RTL, Structural, Behavioral
 
+---
 
  **Performance Comparison**
 
@@ -68,6 +68,8 @@ Power (mW)	2.35	0.93
 ✔ Significant reduction in area, delay, and power consumption
 ✔ Improved performance with configurable accuracy
 
+---
+
  **Advantages**
 
 Low power consumption
@@ -79,6 +81,9 @@ High operating speed
 Dynamic accuracy control
 
 Suitable for error-tolerant applications
+
+---
+
 
 **Applications**
 
